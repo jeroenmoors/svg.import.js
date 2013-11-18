@@ -164,12 +164,22 @@
       /* objectify transformation */
       switch(t[1]) {
         case 'matrix':
+          /*
           trans.a         = parseFloat(v[0]) || def.a
           trans.b         = parseFloat(v[1]) || def.b
           trans.c         = parseFloat(v[2]) || def.c
           trans.d         = parseFloat(v[3]) || def.d
           trans.e         = parseFloat(v[4]) || def.e
           trans.f         = parseFloat(v[5]) || def.f
+          */
+          
+          trans.a         = parseFloat(v[0]);
+          trans.b         = parseFloat(v[1]);
+          trans.c         = parseFloat(v[2]);
+          trans.d         = parseFloat(v[3]);
+          trans.e         = parseFloat(v[4]);
+          trans.f         = parseFloat(v[5]);
+          
         break
         case 'rotate':
           trans.rotation  = parseFloat(v[0]) || def.rotation
